@@ -4,6 +4,22 @@ transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	alert("ok");
+	var a;
+
+	var b;
+
+	var suma;
+
+	a = document.getElementById('txtIdNumeroUno').value;
+
+	b = document.getElementById('txtIdNumeroDos').value;
+
+	a = parseInt(a);
+
+	b = parseInt(b);
+
+	suma = a + b;
+
+	alert("La suma da: " + suma);
 }
 
