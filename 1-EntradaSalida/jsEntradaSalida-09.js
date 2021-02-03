@@ -7,9 +7,17 @@ function mostrarAumento()
 {
 	var importe;
 
+	var resultado;
+
+	var aumento;
+
 	importe = document.getElementById('txtIdSueldo').value;
 
 	importe = parseInt(importe);
 
-	txtIdResultado.value = importe + importe * 0.1
+	aumento = importe * 0.1;
+
+	resultado = importe + aumento;
+
+	txtIdResultado.value = resultado;
 }
