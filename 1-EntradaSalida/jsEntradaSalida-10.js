@@ -5,12 +5,24 @@ mostrar el importe con un Descuento del 25 %
 en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
-	var a;
+	var importe;
 
-	a = document.getElementById('txtIdImporte').value;
+	var resultado;
 
-	a = parseInt(a);
+	var descuento;
 
-	txtIdResultado.value = a - a * 0.25;
+	importe = document.getElementById('txtIdImporte').value;
+
+	importe = parseInt(importe);
+
+	//txtIdResultado.value = importe - importe * 0.25;
+
+	descuento = importe * 0.25;
+
+	resultado = importe - descuento;
+
+	//resultado = importe * 25/100;
+
+	txtIdResultado.value = resultado;
 
 }
