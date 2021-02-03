@@ -19,7 +19,7 @@ function SacarResto()
 
 	b = parseInt(b);
 
-	resto = a / b;
+	resto = a % b;
 
 	alert("El resto es: " + resto);
 }
