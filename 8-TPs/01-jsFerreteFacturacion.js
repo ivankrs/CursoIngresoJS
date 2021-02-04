@@ -11,6 +11,8 @@ function Sumar ()
 
 	var precioC;
 
+	var suma;
+
 	var precioFinal;
 
 	precioA = document.getElementById('txtIdPrecioUno').value;
@@ -28,9 +30,11 @@ function Sumar ()
 	//precioC = parseInt(precioC);
 	precioC = parseFloat(precioC);
 
-	precioFinal = precioA + precioB + precioC;
+	suma = precioA + precioB + precioC;
 
-	alert("La suma es: " + precioFinal);
+	precioFinal = suma;
+
+	alert("El resultado de la suma es: " + precioFinal);
 
 
 }
@@ -65,7 +69,7 @@ function Promedio ()
 
 	precioFinal = suma / 3;
 
-	alert("El promedio es: " + precioFinal);
+	alert("El resultado del promedio es: " + precioFinal);
 }
 function PrecioFinal () 
 {
@@ -99,5 +103,5 @@ function PrecioFinal ()
 	//precioFinal = suma * 1.21;
 	precioFinal = suma + ( suma /100 * 21);
 
-	alert("El precio final es: " + precioFinal);
+	alert("El valor del precio final es: " + precioFinal);
 }
