@@ -24,6 +24,8 @@ function mostrarAumento()
 
 	//resultado = importe - (importe * 25 / 100);
 
+	//resultado = importe * (1 - 0.25) => importe * 0.75;
+
 
 	txtIdResultado.value = resultado;
 
