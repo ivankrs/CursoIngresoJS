@@ -19,9 +19,11 @@ function mostrarAumento()
 
 	descuento = importe * 0.25;
 
+
 	resultado = importe - descuento;
 
-	//resultado = importe * 25/100;
+	//resultado = importe - (importe * 25 / 100);
+
 
 	txtIdResultado.value = resultado;
 
