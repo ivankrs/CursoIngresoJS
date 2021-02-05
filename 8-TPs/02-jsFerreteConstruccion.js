@@ -22,8 +22,10 @@ function Rectangulo ()
 	ancho = document.getElementById('txtIdAncho').value;
 
 	largo = parseInt(largo);
+	//largo = parsefloat(largo);
 
 	ancho = parseInt(ancho);
+	//ancho = parsefloat(ancho);
 
 	perimetro = 2*largo + 2*ancho;
 
@@ -35,9 +37,70 @@ function Rectangulo ()
 }
 function Circulo () 
 {
-	
+	//Tengo que circunferencia dividido diametro es igual a pi(π) => (C/d = π) => (C = π.d)
+	//Tengo que diametro es igual a 2 radios => (d = 2r) => (C = π.2r)
+	//Entonces circunferencia por 3 es igual a 3 vueltas de alambre.
+
+	var radio;
+
+	var diametro;
+
+	var circunferencia;
+
+	var alambre;
+
+	radio = document.getElementById('txtIdRadio').value;
+
+	radio = parseInt(radio);
+	//radio = parsefloat(radio);
+
+	diametro = radio *2;
+
+	circunferencia = diametro * Math.PI;
+
+	//circunferencia = diametro * (3.14159265359);
+
+	alambre = circunferencia * 3;
+
+	//alambre = alambre.toFixed(3);
+
+
+	alert("Debe comprar " + alambre + " metros de alambre.");
+
+
 }
 function Materiales () 
 {
-	
+	//Tengo que para un area de 1m por 1m necesito 2bolsas de cemento y 3 bolsas de cal.
+	//Entonces A*2bolsas de cemento = cant. de bolsas que necesita  y A*3bolsas de cal = cant. de bolsas que necesita.
+
+	var largo;
+
+	var ancho;
+
+	var area;
+
+	var cemento;
+
+	var cal;
+
+	largo = document.getElementById('txtIdLargo').value;
+
+	ancho = document.getElementById('txtIdAncho').value;
+
+	largo = parseInt(largo);
+	//largo = parsefloat(largo);
+
+	ancho = parseInt(ancho);
+	//ancho = parsefloat(ancho);
+
+	area = largo * ancho;
+
+	cemento = area * 2;
+
+	cal = area * 3;
+
+	alert("Para el area de " + area + "m², se necesita " + cemento + " bolsas de cemento y " + cal + " bolsas de cal.");
+
+
 }
