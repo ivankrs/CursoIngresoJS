@@ -8,7 +8,7 @@ function mostrar()
 {
 	var random;
 
-	random = Math.floor(Math.random()*11);
+	random = Math.floor(Math.random()*10 + 1);
 
 	if(random > 8 && random < 11)
 	{
@@ -16,8 +16,8 @@ function mostrar()
 	}
 	else
 	{
-		if(random > 4 && random < 9 )
-		//if(random > 3 && random < 9)
+		//if(random > 4 && random < 9 )
+		if(random > 3 && random < 9)
 		{
 			alert("APROBÓ (" + random + ")" );	
 		}
