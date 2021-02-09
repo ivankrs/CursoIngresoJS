@@ -1,3 +1,6 @@
+/*
+Ivan Keumurdji
+Ejercicio if nº1- Al ingresar una edad que sea igual a 15, mostrar el mensaje "niña bonita".*/
 function mostrar()
 {
 	//tomo la edad 

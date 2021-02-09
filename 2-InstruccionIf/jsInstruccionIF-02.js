@@ -1,6 +1,8 @@
+/*
+Ivan Keumurdji
+Ejercicio if nº2- Al ingresar una edad debemos informar solo si la persona es mayor de edad.*/
 function mostrar()
 {
-	//tomo la edad = txtIdEdad
 
 	var edad
 
@@ -8,7 +10,7 @@ function mostrar()
 
 	edad = parseInt(edad);
 
-	if(edad >= 18)
+	if(edad > 17)
 	{
 		alert("Usted tiene " + edad + " años, y ya es mayor de edad.")
 	}
@@ -16,4 +18,4 @@ function mostrar()
 
 	
 
-}//FIN DE LA FUNCIÓN
+}
