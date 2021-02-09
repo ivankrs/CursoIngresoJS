@@ -7,6 +7,13 @@ function mostrar()
 
 	random = Math.floor(Math.random() * 11);
 
-	alert("El número es: " + random);	
+	alert("El número es: " + random);
+
+	/*if(random != 0)
+	{
+		alert("El número es: " + random);
+	}*/
+
+		
 
 }
