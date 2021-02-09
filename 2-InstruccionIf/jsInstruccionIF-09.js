@@ -1,6 +1,12 @@
+/*
+Ivan Kemrdji
+Ejercicio if nº9- Al presionar el Botón, mostrar un número Random del 1 al 10 inclusive.*/
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");	
+	var random;
 
-}//FIN DE LA FUNCIÓN
+	random = Math.floor(Math.random() * 11);
+
+	alert("El número es: " + random);	
+
+}
