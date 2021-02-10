@@ -54,7 +54,7 @@ function CalcularPrecio ()
  				precioDesc = precio - (precio * 0.30);
  			}
  		}
- 		else
+ 		/*else
  		{
  			if(cantLampara == 4)
  			{
@@ -88,18 +88,18 @@ function CalcularPrecio ()
  					}
  				}
  			}
- 		}
+ 		}*/
  		
  	}
 
 
  	txtIdprecioDescuento.value = precioDesc;
 
- 	if(precioDesc > 120)
+ 	/*if(precioDesc > 120)
  	{
  		ingresosBrutos = precioDesc * 0.10;
 
  		alert("IIBB Usted pago es: " + ingresosBrutos);
- 	}
+ 	}*/
  
 }

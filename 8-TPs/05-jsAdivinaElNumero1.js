@@ -19,7 +19,7 @@ function comenzar()
 
 	var contadorIntentos;
 
-	numeroSecreto = Math.floor(Math.random()*101);
+	numeroSecreto = Math.floor(Math.random()*100 +1 );
 
 	alert("Se a creado un número secreto");
 	console.log(numeroSecreto);
