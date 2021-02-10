@@ -15,11 +15,7 @@ function comenzar()
 {
 	var numeroSecreto; 
 
-	var numeroIngresado;
-
-	var contadorIntentos;
-
-	numeroSecreto = Math.floor(Math.random()*100 +1 );
+	numeroSecreto = Math.floor(Math.random()*100 +1);
 
 	alert("Se a creado un número secreto");
 	console.log(numeroSecreto);
@@ -39,13 +35,14 @@ function verificar()
 	numeroIngresado = parseInt(numeroIngresado);
 
 	alert(numeroIngresado);
+	console.log(numeroSecreto);
 
 
-	txtIdIntentos.value = 1;
+	//txtIdIntentos.value = 1;
 
-	contadorIntentos = document.getElementById('txtIdIntentos').value;
+	//contadorIntentos = document.getElementById('txtIdIntentos').value;
 
-	contadorIntentos = parseInt(contadorIntentos);
+	//contadorIntentos = parseInt(contadorIntentos);
 
 	//alert("su " + numeroSecreto);	
 
@@ -53,7 +50,7 @@ function verificar()
 
 	//txtIdIntentos.value = contadorIntentos;
 
-	alert (contadorIntentos);
+	//alert (contadorIntentos);
 	
 	
 }
