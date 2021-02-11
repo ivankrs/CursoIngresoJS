@@ -1,6 +1,6 @@
 /*
 Ivan keumurdji
-Ejercicio switch nº1-al seleccionar un mes informar.
+Ejercicio switch nº1- Al seleccionar un mes informar.
 si es Enero: "que comiences bien el año!!!."
 si es Marzo: "a clases!!!."
 si es Julio: "se vienen las vacaciones!!!."
