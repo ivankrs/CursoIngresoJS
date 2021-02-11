@@ -9,49 +9,68 @@ secreto del 1 al 100, en la pantalla del juego
 “Usted es un ganador!!! y en solo X intentos”.
 de no ser igual se debe informar si “falta…”  para llegar al número secreto  o si “se pasó…”  del número secreto.
 */
+//Defino variables globales, para q se puedan tomar en ambas funciones.
+
+var numeroSecreto;
 
 
 function comenzar()
 {
-	var numeroSecreto; 
+	txtIdIntentos.value = 1;
 
 	numeroSecreto = Math.floor(Math.random()*100 +1);
 
-	alert("Se a creado un número secreto");
-	console.log(numeroSecreto);
+	alert("Se ha creado un número secreto.");
 
+	console.log(numeroSecreto); 
 }
 
 function verificar()
 {
-	var numeroSecreto; 
-
 	var numeroIngresado;
 
+	var diferencia;
+
 	var contadorIntentos;
+
+	var intentos;
 
 	numeroIngresado = document.getElementById('txtIdNumero').value;
 
 	numeroIngresado = parseInt(numeroIngresado);
 
-	alert(numeroIngresado);
-	console.log(numeroSecreto);
+	contadorIntentos = document.getElementById('txtIdIntentos').value;
+
+	contadorIntentos = parseInt(contadorIntentos);
+
+	diferencia = numeroSecreto - numeroIngresado;
+
+	alert("Eligió el número: " + numeroIngresado);
 
 
-	//txtIdIntentos.value = 1;
+	if(diferencia != 0)
+	{
+		intentos = contadorIntentos + 1 ;
 
-	//contadorIntentos = document.getElementById('txtIdIntentos').value;
+		if(diferencia < 0)
+		{
+			alert("Se ha pasado del número secreto.");
+		}
+		else
+		{
+			if(diferencia > 0)
+			{
+				alert("Aun le falta para llegar al número secreto.");
+			}
+		}
 
-	//contadorIntentos = parseInt(contadorIntentos);
+		txtIdIntentos.value = intentos;
+	}
+	else
+	{
+        alert("Usted es un ganador!!! y en tan solo " + contadorIntentos + " intento/s.");
 
-	//alert("su " + numeroSecreto);	
-
-	//contadorIntentos = contadorIntentos;
-
-	//txtIdIntentos.value = contadorIntentos;
-
-	//alert (contadorIntentos);
-	
-	
+        txtIdIntentos.value = ("-Comenzar- para volver a jugar");
+	}	
 }
 
