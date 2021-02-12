@@ -19,10 +19,5 @@ function mostrar()
 		default:
 			alert("No hay nada programado para este horario.");
 			break;
-
 	}
-	
-
-
-
 }

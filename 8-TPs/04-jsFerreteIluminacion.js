@@ -90,8 +90,7 @@ function CalcularPrecio ()
  		}
  		
  	}
-
-
+ 	
  	txtIdprecioDescuento.value = precioDesc;
 
  	if(precioDesc > 120)
@@ -100,5 +99,4 @@ function CalcularPrecio ()
 
  		alert("IIBB Usted pago es: " + ingresosBrutos);
  	}
- 
 }
