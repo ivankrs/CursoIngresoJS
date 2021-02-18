@@ -3,7 +3,7 @@ Ivan Keumurdji
 Ejercicio switch nº8- Al seleccionar un destino informar si hace FRIO o CALOR en ese destino*/
 function mostrar()
 {
-	var destinoIngresado 
+	var destinoIngresado; 
 
 	destinoIngresado = document.getElementById('txtIdDestino').value;
 
