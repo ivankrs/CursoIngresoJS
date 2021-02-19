@@ -8,6 +8,8 @@ function mostrar()
 
 	numeroIngresado = prompt("ingrese un número entre 0 y 10.");
 
+
+	//while(!(numeroIngresado >= 0 && numeroIngresado <= 9)) - opcion 2-
 	while(numeroIngresado < -1 && numeroIngresado > 10)
 	{
 		alert("No es un número permitido.");
